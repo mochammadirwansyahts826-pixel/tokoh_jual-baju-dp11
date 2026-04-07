@@ -1,0 +1,180 @@
+/* ========================================
+   GLOBAL STYLES (GREEN TOKOPEDIA STYLE)
+   ======================================== */
+:root {
+    --primary: #ffffff;
+    --secondary: #f5f5f5;
+    --accent: #03ac0e; /* hijau utama */
+    --accent-hover: #028a0c;
+    --text-light: #1a1a1a;
+    --text-muted: #6b7280;
+    --card-bg: #ffffff;
+    --success: #03ac0e;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --gradient-1: linear-gradient(135deg, #ffffff 0%, #f5f5f5 100%);
+    --gradient-accent: linear-gradient(135deg, #03ac0e 0%, #06d001 100%);
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--gradient-1);
+    min-height: 100vh;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ========================================
+   NAVBAR
+   ======================================== */
+.navbar {
+    background: rgba(3, 172, 14, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-brand span {
+    color: #d1fae5;
+}
+
+.navbar-menu a:hover {
+    background: white;
+    color: var(--accent);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .navbar-menu {
+        background: white;
+    }
+}
+
+/* ========================================
+   AUTH
+   ======================================== */
+.auth-box {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 3rem;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e5e7eb;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    border: 2px solid #e5e7eb;
+    background: #ffffff;
+    color: #1a1a1a;
+}
+
+.form-group input:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 10px rgba(3, 172, 14, 0.2);
+}
+
+/* BUTTON */
+.btn-primary {
+    background: var(--accent);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: var(--accent-hover);
+}
+
+/* ========================================
+   DASHBOARD
+   ======================================== */
+.dashboard-header {
+    background: #e6f9ec;
+}
+
+.stat-card {
+    background: white;
+    border: 1px solid #e5e7eb;
+}
+
+.stat-icon {
+    background: var(--accent);
+}
+
+/* ========================================
+   PRODUCT
+   ======================================== */
+.product-card {
+    background: white;
+    border: 1px solid #e5e7eb;
+}
+
+.product-card:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.product-price {
+    color: var(--accent);
+}
+
+/* ========================================
+   FORM
+   ======================================== */
+.form-container {
+    background: white;
+    border: 1px solid #e5e7eb;
+}
+
+/* ========================================
+   TABLE
+   ======================================== */
+.table-container {
+    background: white;
+    border: 1px solid #e5e7eb;
+}
+
+th {
+    background: #e6f9ec;
+}
+
+/* ========================================
+   CART
+   ======================================== */
+.cart-items,
+.cart-summary {
+    background: white;
+    border: 1px solid #e5e7eb;
+}
+
+.qty-btn:hover {
+    background: var(--accent);
+}
+
+/* ========================================
+   ALERT
+   ======================================== */
+.alert-success {
+    background: var(--accent);
+}
+
+/* ========================================
+   FOOTER
+   ======================================== */
+.footer {
+    background: #f5f5f5;
+    border-top: 1px solid #e5e7eb;
+}
